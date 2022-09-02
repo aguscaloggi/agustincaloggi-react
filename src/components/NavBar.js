@@ -1,9 +1,9 @@
 import React from 'react'
 import '../app/styles.css';
+import CartWidget from './CartWidget';
 
 export const NavBar = () => {
   return (
-    <body> 
         <header class="header">
         <a href="#">
             <p class="header__frase">Alojamientos Argentina</p>
@@ -18,8 +18,8 @@ export const NavBar = () => {
             <li><a href="#">Preguntas Frecuentes</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
+        <CartWidget />
         </header>
-    </body>
   )
 }
 
