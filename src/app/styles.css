@@ -2,6 +2,7 @@
     --fontcolor: rgba(245, 245, 245, 0.87);
     --fontcolorhover: rgba(255, 255, 255, 1);
     --bgcolor: #121212;
+    --btcolor: rgba(55, 139, 252, 0.2);
 }
 
 body {
@@ -149,4 +150,78 @@ body {
     height: 25px;
     width: auto;
     margin-right: 10px;
+}
+
+.container {
+    border-radius: 20px;
+    background: linear-gradient(145deg, #101010, #131313);
+    box-shadow: 12px 12px 20px #0a0a0a,
+        -12px -12px 20px #1a1a1a;
+    width: fit-content;
+    margin-left: 2rem;
+}
+
+.itemcount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 16px;
+    padding: 5px;
+}
+
+.counter {
+    align-self: center;
+}
+
+.itemcount-buttons {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.decrement-button {
+    background-color: #121212;
+    border: 0;
+    color: var(--fontcolor);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.decrement-button:hover {
+    color: #FFFFFF;
+    transition-duration: 200ms;
+}
+
+.increment-button {
+    background-color: #121212;
+    border: 0;
+    color: var(--fontcolor);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.increment-button:hover {
+    color: #FFFFFF;
+    transition-duration: 200ms;
+}
+
+.addcart-button {
+    background-color: var(--btcolor);
+    color: var(--fontcolor);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0.4em 0.8em;
+    margin: 0.5em;
+    border: 0px;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.addcart-button:hover {
+    background-color: rgba(55, 139, 252, 0.3);
+    color: var(--fontcolorhover);
+    transition-duration: 200ms;
 }
