@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import './app/styles.css';
 import ItemListContainer from './components/ItemListContainer';
 import ItemCount from './components/ItemCount';
+import ItemList from './components/ItemList';
 
 const App = () => {
   return (
@@ -15,6 +16,9 @@ const App = () => {
       </div>
       <div>
         <ItemCount stock={5} initial={1} />
+      </div>
+      <div className='container__itemlist'>
+        <ItemList />
       </div>
     </body>
   )
