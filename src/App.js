@@ -4,23 +4,14 @@ import './app/styles.css';
 import ItemListContainer from './components/ItemListContainer';
 import ItemCount from './components/ItemCount';
 import ItemList from './components/ItemList';
+import ItemDetail from './components/ItemDetail';
+import Router from './app/Router';
 
 const App = () => {
   return (
-    <body>
       <div>
-        <NavBar />
+        <Router />
       </div>
-      <div>
-        <ItemListContainer param="43"/>
-      </div>
-      <div>
-        <ItemCount stock={5} initial={1} />
-      </div>
-      <div className='container__itemlist'>
-        <ItemList />
-      </div>
-    </body>
   )
 }
 

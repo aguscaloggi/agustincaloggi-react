@@ -1,8 +1,9 @@
 import React from 'react'
 import '../app/styles.css';
 import CartWidget from './CartWidget';
+import {Link} from "react-router-dom";
 
-export const NavBar = () => {
+const NavBar = () => {
   return (
         <header class="header">
         <a href="#">
@@ -13,10 +14,10 @@ export const NavBar = () => {
             <div class="menu-button"></div>
         </label>
         <ul class="header__menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Alojamientos</a></li>
-            <li><a href="#">Preguntas Frecuentes</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><Link to="/">Inicio</Link></li>
+            <li><Link to="/">Alojamientos</Link></li>
+            <li><Link to="/">Preguntas Frecuentes</Link></li>
+            <li><Link to="/">Contacto</Link></li>
         </ul>
         <CartWidget />
         </header>
