@@ -18,6 +18,7 @@ const NavBar = () => {
             <li><Link to="/">Alojamientos</Link></li>
             <li><Link to="/">Preguntas Frecuentes</Link></li>
             <li><Link to="/">Contacto</Link></li>
+            <li>Prueba</li>
         </ul>
         <CartWidget />
         </header>
