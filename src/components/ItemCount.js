@@ -25,7 +25,7 @@ export const ItemCount = ({stock, initial}) => {
                 <button className='decrement-button' onClick={decrement}>-</button>
                 <button className='increment-button' onClick={increment}>+</button>
             </div>
-            <button className='addcart-button' onClick={addcart}>Añadir al carrito</button>
+            <button className='addcart-button' onClick={addcart}>Añadir al carritos </button>
         </div>
     </div>
   )
